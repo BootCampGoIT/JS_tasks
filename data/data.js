@@ -51,6 +51,7 @@ const data = {
       },
     ],
   },
+  
   courses: [
     {
       _id: "60af55a3b09bc50b002c366c",
