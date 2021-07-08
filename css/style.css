@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+  border-bottom: 2px solid cornflowerblue;
+  padding: 0 20px;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+}
+
+.navListItem:not(:last-child) {
+  margin-right: 20px;
+}
+
+.navListItemLink {
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: cornflowerblue;
+  font-weight: 600;
+}
+
+.options {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+  width: 300px;
+}

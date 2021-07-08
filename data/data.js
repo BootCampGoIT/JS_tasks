@@ -2,7 +2,7 @@ const data = {
   header: {
     routes: [
       {
-        name: { en: "Home", ru: "Главная", ua: "Головна" },
+        name: { "en": "Home", "ru": "Главная", "ua": "Головна" },
         path: "/home",
         isPrivate: false,
         isRestricted: false,
@@ -51,7 +51,7 @@ const data = {
       },
     ],
   },
-  
+
   courses: [
     {
       _id: "60af55a3b09bc50b002c366c",
