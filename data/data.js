@@ -2,31 +2,7 @@ const data = {
   header: {
     routes: [
       {
-        name: { "en": "Home", "ru": "Главная", "ua": "Головна" },
-        path: "/home",
-        isPrivate: false,
-        isRestricted: false,
-        icon: "",
-        exact: false,
-      },
-      {
-        name: { "en": "Home", "ru": "Главная", "ua": "Головна" },
-        path: "/home",
-        isPrivate: false,
-        isRestricted: false,
-        icon: "",
-        exact: false,
-      },
-      {
-        name: { "en": "Home", "ru": "Главная", "ua": "Головна" },
-        path: "/home",
-        isPrivate: false,
-        isRestricted: false,
-        icon: "",
-        exact: false,
-      },
-      {
-        name: { "en": "Home", "ru": "Главная", "ua": "Головна" },
+        name: { en: "Home", ru: "Главная", ua: "Головна" },
         path: "/home",
         isPrivate: false,
         isRestricted: false,
