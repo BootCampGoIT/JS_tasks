@@ -1,3 +1,5 @@
+// функция отвечает за возврат разметки страницы, которая будет
+// добавлена в main 
 export const getAuthMarkup = () => {
   return `<form class="authForm">
     <label class="authLabel"

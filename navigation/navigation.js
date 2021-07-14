@@ -6,6 +6,7 @@ import { getHomeMarkup } from "../pages/home.js";
 import { getProfileMarkup } from "../pages/profile.js";
 import { refs } from "../refs/refs.js";
 
+//функция отвечает за создание разметки элементов навигации
 export const createNavigationMarkup = (array, language) => {
   return array.reduce((acc, { name, path }) => {
     acc += `<li class="navListItem" data-path=${path}>
@@ -15,12 +16,20 @@ export const createNavigationMarkup = (array, language) => {
   }, "");
 };
 
+// функция отвечает за поиск первого элемента навигации и 
+// добавляет активный класс первому элементу. 
+// Вставляет в main разметку содержимого страницы Home  
 const setFirstActiveLink = () => {
   const firstLink = document.querySelector(".navListItemLink");
   firstLink.classList.add("navListItemLinkActive");
   refs.main.innerHTML = getHomeMarkup();
 };
 
+// функция отвечает за действия по клику на элемент навигации.
+// Снимает активный класс у текущего элемента и добавляет 
+// активный класс на элемент по которому произведен клик
+// В main заменяет разметку в соответствии с тем, какой 
+// выбран текущий элемент
 export const setActiveLink = (e) => {
   if (e.target.classList.contains("navListItemLinkActive")) return;
   const currentActiveLink = document.querySelector(".navListItemLinkActive");
@@ -52,7 +61,9 @@ export const setActiveLink = (e) => {
       break;
   }
 };
-
+// запускается при загрузке приложения
+// реализует вставку разметки навигации
+// запускает функцию добавления активного класса первому элементу навигации 
 export const createHeaderNavigationMarkup = () => {
   const markup = createNavigationMarkup(data.header.routes, "en");
   refs.navList.innerHTML = markup;
